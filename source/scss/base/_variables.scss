@@ -1,0 +1,26 @@
+/*******************************
+	Colors
+*******************************/
+// Base colors
+$white: #FFFFFF;
+$black: #000000;
+
+// By tone
+$white-tone-1: #F1F1F1;
+$white-tone-2: #EDEDED;
+
+$black-tone-1: #030303;
+$black-tone-2: #131313;
+$black-tone-3: #333333;
+
+/*******************************
+	Title and subtitle sizes
+*******************************/
+$title-sizes: (
+	h1: '3em' 			'48px',
+	h2: '2.3125em' 	'37px',
+	h3: '2em' 			'32px',
+	h4: '1.75em' 		'28px',
+	h5: '1.5em' 		'24px',
+	h6: '1.125em' 	'18px'
+);

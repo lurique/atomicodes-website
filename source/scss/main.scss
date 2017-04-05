@@ -1,11 +1,10 @@
 // Base
-@import 'base/reset',
-				'base/variables',
+@import	'base/variables',
+				'base/reset',
 				'base/typography';
 
 // Vendors
-@import 'vendors/framework-mixins',
-				'vendors/framework';
+@import 'vendors/framework';
 
 // Utils
 @import 'utils/functions',
