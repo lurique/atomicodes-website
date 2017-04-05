@@ -1,0 +1,70 @@
+/*******************************
+	Main content
+*******************************/
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+
+	// Getting all elements
+	* {
+		box-sizing: border-box;
+		vertical-align: baseline;
+		font-size: 100%;
+	}
+}
+
+/*******************************
+	Common elements
+*******************************/
+article, aside, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section {
+	display: block;
+}
+
+/*******************************
+	Lists
+*******************************/
+ol, ul {
+	list-style: none;
+	list-style-type: none;
+}
+
+/*******************************
+	Table
+*******************************/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*******************************
+	Section
+*******************************/
+section {
+	height: auto;
+	max-height: auto;		
+}
+
+/*******************************
+	Title and Subtitle
+*******************************/
+$title-sizes: (
+	h1: '3em' 			'48px',
+	h2: '2.3125em' 	'37px',
+	h3: '2em' 			'32px',
+	h4: '1.75em' 		'28px',
+	h5: '1.5em' 		'24px',
+	h6: '1.125em' 	'18px'
+);
+
+@each $element, $size in $title-sizes {
+	#{$element} {
+		font-size: nth($size, 2);
+		font-size: nth($size, 1);
+	}
+}
+
+small {
+	font-size: 0.6em;
+}
