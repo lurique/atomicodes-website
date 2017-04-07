@@ -1,14 +1,12 @@
 // Base
 @import	'base/variables',
+				'base/mixins',
 				'base/reset',
+				'base/grids',
 				'base/typography';
 
-// Vendors
-@import 'vendors/framework';
-
 // Utils
-@import 'utils/functions',
-				'utils/mixins';
+@import 'utils/functions';
 
 // Components
 @import 'components/buttons',
@@ -18,4 +16,4 @@
 // Layout
 @import 'layout/navbar',
 				'layout/footer',
-				'layout/pages/index';
+				'layout/sections/home';

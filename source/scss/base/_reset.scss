@@ -7,7 +7,7 @@ body {
 	line-height: 1;
 
 	// Getting all elements
-	* {
+	*, :not(svg) {
 		box-sizing: border-box;
 		vertical-align: baseline;
 		font-size: 100%;

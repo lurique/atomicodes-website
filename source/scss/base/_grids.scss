@@ -1,0 +1,10 @@
+/*******************************
+	Content wrapper
+*******************************/
+.container {
+	@include elementSize(1024px, auto);
+}
+
+.container-fluid {
+	@include elementSize(calc(100% - 60px), auto);
+}

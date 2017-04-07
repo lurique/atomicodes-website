@@ -1,0 +1,14 @@
+#home {
+	@include elementSize(100%, 100vh);
+	@include centerHorizontally();
+	@include gradientBackground(45deg, $purple 0%, $green 100%);
+	padding-top: 35px;
+
+	svg {
+		background: $black;
+
+		path, rect {
+			fill: $white;
+		}
+	}
+}

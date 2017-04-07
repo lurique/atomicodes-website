@@ -1,0 +1,37 @@
+/*******************************
+	Base
+*******************************/
+@mixin elementSize($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+/*******************************
+	Layout
+*******************************/
+@mixin gradientBackground($dir, $firstProperties, $secondProperties) {
+	background: -webkit-linear-gradient($dir, $firstProperties, $secondProperties);
+	background: -moz-linear-gradient($dir, $firstProperties, $secondProperties);
+	background: linear-gradient($dir, $firstProperties, $secondProperties);
+}
+
+/*******************************
+	Flexbox
+*******************************/
+@mixin centerHorizontally() {
+	display: flex;
+	justify-content: center;
+}
+
+// Center child elements vertically
+@mixin centerVertically() {
+	display: flex;
+	align-items: center;
+}
+
+// Center child elements both Vertically and Horizontally
+@mixin centerBoth {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
