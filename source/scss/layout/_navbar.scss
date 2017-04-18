@@ -1,0 +1,96 @@
+.nav {
+	padding-top: 10px;
+
+	.nav-center, .nav-left {
+		.nav-item {
+			@include elementSize(auto, 0);
+			color: transparent;
+			margin-top: 35px;
+			padding: 0;
+			text-transform: uppercase;
+
+			svg {
+				@include elementSize(60px, 60px);
+				position: absolute;
+				left: 15px;
+				background: $white;
+				border-radius: 50%;
+
+				path {
+					fill: $black;
+				}
+			}
+
+			span {
+				padding: 5px 20px;
+				position: relative;
+				overflow: hidden;
+
+				&::before {
+					@include pseudoElement(attr(data-css), absolute, 0, 0);
+					@include elementSize(100%, auto);
+					@include transition(all .2s ease);
+					background: transparent;
+					color: $white;
+					padding: 5px 20px;
+					font-weight: 400;
+				}
+
+				&::after {
+					@include pseudoElement(attr(data-css), absolute, 0, 0);
+					@include elementSize(100%, auto);
+					@include transition(all .2s cubic-bezier(0.800, 0, 0, 1.200));
+					@include transform(scale(0.2));
+					background: $white;
+					color: $blue;
+					padding: 5px 20px;
+					font-weight: 400;
+					margin-top: 25px;
+				}
+
+				&:hover {
+					box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+
+					&::after {
+						@include transform(scale(1));
+						background: $white;
+						margin-top: 0;
+					}
+
+					&::before {
+						margin-top: -25px;
+					}
+				}
+			}
+		}
+	}
+
+	.nav-right {
+		padding-top: 5px;
+
+		a {
+			@include elementSize(25px, 25px);
+			@include transition(all .2s ease);
+			@include transform(scale(1));
+			border: 2px solid $white;
+			color: $white;
+			display: block;
+			font-size: 0.7em;
+			position: fixed;
+			right: 15px;
+			padding-top: 3px;
+			padding-right: 1px;
+
+			&:nth-child(1) { margin-top: 0; }
+			&:nth-child(2) { margin-top: 30px; }
+			&:nth-child(3) { margin-top: 60px; }
+
+			&:hover {
+				@include transform(scale(1.2));
+				background: $white;
+				color: $blue;
+				box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+			}
+		}
+	}
+}

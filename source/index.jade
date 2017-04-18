@@ -5,10 +5,15 @@ head
 
 	title Teste
 
+	link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Rubik:300,400,700")
+	link(rel="stylesheet", href="css/bulma.css")
 	link(rel="stylesheet", href="css/style.min.css")
 body
 	include ./inc/navbar
 
-	include ./inc/home
+	include ./inc/sections/home
+	include ./inc/sections/atomicodes
 	
 	include ./inc/footer
+
+	script(type="text/javascript", src="js/script.min.js")

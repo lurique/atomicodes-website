@@ -2,29 +2,38 @@ var App = App || {};
 
 ;(function() {
 
-	App.Main = {
+	Main = {
 
 		init: function() {
-			this.cacheSelectors();
-			this.bindEvents();
+			this.bindScripts();
+			this.bindLanguage();
 		},
 
-		cacheSelectors: function() {
-
+		bindScripts: function() {
+			for ( var script in App ) {
+				App[script].init();
+			}
 		},
 
-		bindEvents: function() {
+		bindLanguage: function() {
+			var userLang = navigator.language || navigator.userLanguage;
 
-		},
+			if ( userLang == 'pt-BR' ) {
+				var elements = document.querySelectorAll('[data-portuguese]');
 
-		Events: {
+				elements.forEach(function(attr) {
+					var attribute = attr.getAttribute('data-portuguese');
 
-
-
+					attr.innerHTML = attribute;
+					attr.setAttribute('data-css', attribute);
+				});
+			}
 		}
 
 	}
 
-})();
+	document.addEventListener('DOMContentLoaded', function() {
+		Main.init();
+	});
 
-App.Main.init();
+})();

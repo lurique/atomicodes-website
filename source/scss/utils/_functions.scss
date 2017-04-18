@@ -1,0 +1,4 @@
+// This function get two values in PX and transform them into %.
+@function calculatePercentage($firstValue, $secondValue) {
+	@return ($firstValue, $secondValue) * 100%;
+}

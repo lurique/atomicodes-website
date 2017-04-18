@@ -4,8 +4,8 @@
 // Base colors
 $white: #FFFFFF;
 $black: #000000;
-$purple: #283593;
-$green: #80DEEA;
+$green: #46D1B0;
+$blue: #008AE2;
 
 // By tone
 $white-tone-1: #F1F1F1;
@@ -26,3 +26,13 @@ $title-sizes: (
 	h5: '1.5em' 		'24px',
 	h6: '1.125em' 	'18px'
 );
+
+/*******************************
+	Screen sizes
+*******************************/
+$screen-extra-small: '320px';
+$screen-small: '480px';
+$screen-medium: '678px';
+$screen-large: '768px';
+$screen-extra-large: '992px';
+$screen-ultra-large: '1200px';

@@ -6,6 +6,19 @@
 	height: $height;
 }
 
+@mixin pseudoElement($content, $position, $top, $left) {
+	content: $content;
+	position: $position;
+	top: $top;
+	left: $left;
+}
+
+@mixin absolute($top, $left) {
+	position: absolute;
+	top: $top;
+	left: $left;
+}
+
 /*******************************
 	Layout
 *******************************/
@@ -13,6 +26,45 @@
 	background: -webkit-linear-gradient($dir, $firstProperties, $secondProperties);
 	background: -moz-linear-gradient($dir, $firstProperties, $secondProperties);
 	background: linear-gradient($dir, $firstProperties, $secondProperties);
+}
+
+@mixin arrowTop($size, $type, $bg) {
+	border-left: $size $type transparent;
+	border-right: $size $type transparent;
+	border-bottom: $size $type $bg;
+}
+
+@mixin arrowDown($size, $type, $bg) {
+	border-left: $size $type transparent;
+	border-right: $size $type transparent;
+	border-top: $size $type $bg;
+}
+
+@mixin arrowLeft($size, $type, $bg) {
+	border-bottom: $size $type transparent;
+	border-top: $size $type transparent;
+	border-right: $size $type $bg;
+}
+
+@mixin arrowRight($size, $type, $bg) {
+	border-bottom: $size $type transparent;
+	border-top: $size $type transparent;
+	border-left: $size $type $bg;
+}
+
+/*******************************
+	Transition / Transform
+*******************************/
+@mixin transform($param) {
+	-webkit-transform: $param;
+	-moz-transform: $param;
+	transform: $param;
+}
+
+@mixin transition($param) {
+	-webkit-transition: $param;
+	-moz-transition: $param;
+	transition: $param;
 }
 
 /*******************************

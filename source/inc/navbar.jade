@@ -1,0 +1,30 @@
+nav.nav.nav-fixed
+	div.nav-left
+		a(href="/" class="nav-item nav-logo")
+			include components/logo
+
+	div.nav-center
+		a(href="#home" class="nav-item" title="Home / Inicio" rel="bookmark")
+			span(data-css="Home" data-portuguese="Inicio" data-english="Home") Home
+
+		a(href="#atomicodes" class="nav-item" title="Atomicodes" rel="bookmark")
+			span(data-css="Atomicodes" data-portuguese="Atomicodes" data-english="Atomicodes") Atomicodes
+
+		a(href="#clients" class="nav-item" title="Clients / Clientes" rel="bookmark")
+			span(data-css="Clients" data-portuguese="Clientes" data-english="Clients") Clients
+
+		a(href="/blog" class="nav-item" title="Blog" rel="bookmark")
+			span(data-css="Blog" data-portuguese="Blog" data-english="Blog") Blog
+
+		a(href="#contact" class="nav-item" title="Contato / Contact / Contacto" rel="bookmark")
+			span(data-css="Contact" data-portuguese="Contato" data-english="Contact") Contact
+
+		a(href="#social" class="nav-item" title="Social" rel="bookmark")
+			span(data-css="Social" data-portuguese="Social" data-english="Social") Social
+
+	div#languages.nav-right
+		a(class="language" data-language="portuguese" href="javascript:" title="Português" rel="boomark")
+			span PT
+
+		a(class="language" data-language="english" href="javascript:" title="English" rel="bookmark")
+			span EN
