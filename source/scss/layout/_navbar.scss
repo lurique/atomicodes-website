@@ -1,6 +1,39 @@
 .nav {
+	@include transition(all .2s cubic-bezier(0.800, 0, 0, 1.200));
 	padding-top: 10px;
 
+	// Active for scrolling effect
+	&.active {
+		background: $white;
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
+		padding-top: 0;
+		padding-bottom: 35px;
+
+		.nav-center, .nav-left {
+			.nav-item {
+				span {
+					&::before {
+						color: $black;
+					}
+				}
+
+				svg {
+					background: transparent;
+				}
+			}
+		}
+
+		.nav-right {
+			padding-top: 7px;
+
+			a {
+				border-color: $black;
+				color: $black;
+			}
+		}
+	}
+
+	// Neutral style
 	.nav-center, .nav-left {
 		.nav-item {
 			@include elementSize(auto, 0);
@@ -11,12 +44,14 @@
 
 			svg {
 				@include elementSize(60px, 60px);
+				@include transition(all .2s cubic-bezier(0.800, 0, 0, 1.200));
 				position: absolute;
 				left: 15px;
 				background: $white;
 				border-radius: 50%;
 
 				path {
+					@include transition(all .2s cubic-bezier(0.800, 0, 0, 1.200));
 					fill: $black;
 				}
 			}
