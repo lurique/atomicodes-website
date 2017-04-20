@@ -1,4 +1,38 @@
+// Other elements for footer
+#footer {
+	background: $white;
+	border-top: 1px solid rgba(0,0,0,0.15);
+	padding: 30px 0;
+
+	.text-color-black {
+		margin-bottom: 10px;
+	}
+
+	a {
+		@include transition(all .1s linear);
+		color: $gray;
+
+		&:hover {
+			color: $black;
+			margin-left: 5px;
+		}
+	}
+}
+
+// Copyright text area
 footer {
-	background: $black-tone-2;
+	@include gradientBackground(45deg, $green 0%, $blue 100%);
 	color: $white;
+	font-size: 0.8em;
+	padding: 10px;
+
+	a {
+		@include transition(all .2s ease);
+		border-bottom: 1px dotted $white;
+		color: $white;
+
+		&:hover {
+			color: $white;
+		}
+	}
 }

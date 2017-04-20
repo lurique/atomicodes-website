@@ -1,44 +1,58 @@
-footer
+section#footer
 	div.container
 		div.columns
+			//- First group of columns
 			div.column.is-two-thirds
 				div.columns
+					//- Logo column
 					div.column
 						include components/logo
 
+					//- Links column
 					div.column
-						p(class="text-uppercase text-bold" data-portuguese="Sobre nós" data-english="About us") About us
-						a(href="#atomicodes" data-portuguese="A Atomicodes <br>" data-english="Atomicodes <br>") Atomicodes <br>
-						a(href="#atomicodes" data-portuguese="Nossa equipe <br>" data-english="Our team <br>") Our team <br>
-						a(href="#contact" data-portuguese="Trabalhe conosco" data-english="Work with us") Work with us
+						p.text-uppercase.text-bold.text-color-black(data-portuguese="Sobre nós" data-english="About us") About us
 
-					div.column
-						p(class="text-uppercase text-bold" data-portuguese="Produtos" data-english="Products") Products
-						a(href="javascript:void(0)" data-portuguese="Sistema ERP <br>" data-english="ERP System <br>") ERP System <br>
-						a(href="javascript:void(0)" data-portuguese="Aplicativos <br>" data-english="APP Development <br>") APP Development <br>
-						a(href="javascript:void(0)" data-portuguese="Sistema sob medida <br>" data-english="Custom system <br>") Custom system <br>
-						a(href="javascript:void(0)" data-portuguese="Website sob medida <br>" data-english="Custom website <br>") Custom website <br>
-						a(href="javascript:void(0)" data-portuguese="Blog sob medida <br>" data-english="Custom blog <br>") Custom blog <br>
-						a(href="javascript:void(0)" data-portuguese="Outros produtos" data-english="Other products") Other products
+						p.link
+							a(href="#atomicodes" data-portuguese="A Atomicodes" data-english="Atomicodes") Atomicodes
+						p.link
+							a(href="#atomicodes" data-portuguese="Nossa equipe" data-english="Our team") Our team
+						p.link
+							a(href="#contact" data-portuguese="Trabalhe conosco" data-english="Work with us") Work with us
 
 					div.column
-						p(class="text-uppercase text-bold")
-							a(href="#home" data-portuguese="Inicio" data-english="Home") Home
-						p(class="text-uppercase text-bold")
-							a(href="#atomicodes" data-portuguese="Atomicodes" data-english="Atomicodes") Atomicodes
-						p(class="text-uppercase text-bold")
-							a(href="#atomicodes" data-portuguese="Clientes" data-english="Clients") Clients
-						p(class="text-uppercase text-bold")
-							a(href="/blog" data-portuguese="Blog" data-english="Blog") Blog
-						p(class="text-uppercase text-bold")
-							a(href="#contact" data-portuguese="Contato" data-english="Contact") Contact
+						p.text-uppercase.text-bold.text-color-black(data-portuguese="Produtos" data-english="Products") Products
+						
+						p.link
+							a(href="javascript:void(0)" data-portuguese="Sistema ERP" data-english="ERP System") ERP System
+						p.link
+							a(href="javascript:void(0)" data-portuguese="Aplicativos" data-english="APP Development") APP Development
+						p.link
+							a(href="javascript:void(0)" data-portuguese="Sistema sob medida" data-english="Custom system") Custom system
+						p.link
+							a(href="javascript:void(0)" data-portuguese="Website sob medida" data-english="Custom website") Custom website
+						p.link
+							a(href="javascript:void(0)" data-portuguese="Blog sob medida" data-english="Custom blog") Custom blog
+						p.link
+							a(href="javascript:void(0)" data-portuguese="Outros produtos" data-english="Other products") Other products
 
+					div.column
+						p.text-uppercase.text-bold.text-color-black(data-portuguese="Social" data-english="Social") Social
 
-
+						p.link
+							a(href="facebook.com/atomicodes" rel="noopener nofollow" target="_blank") Facebook
+						p.link
+							a(href="twitter.com/atomicodes" rel="noopener nofollow" target="_blank") Twitter
+						p.link
+							a(href="instagram.com/atomicodes" rel="noopener nofollow" target="_blank") Instagram
+						p.link
+							a(href="github.io/atomicodes" rel="noopener nofollow" target="_blank") Github
+						p.link
+							a(href="behance.com/atomicodes" rel="noopener nofollow" target="_blank") Behance
+					
+			//- Second group of columns
 			div.column
-				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aliquam velit quia, aliquid enim quis, non beatae recusandae magnam accusamus odit. Accusantium laboriosam adipisci minima ab hic earum praesentium est.
+				div.vertical-separator
 
-			div.column
-				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aliquam velit quia, aliquid enim quis, non beatae recusandae magnam accusamus odit. Accusantium laboriosam adipisci minima ab hic earum praesentium est.
-
-	p(class="has-text-centered" data-portuguese="&copy; 2017 - Atomicodes | Todos os direitos reservados" data-english="&copy; 2017 - Atomicodes | All rights reserved") &copy; 2017 - Atomicodes | All rights reserved
+footer
+	div.container
+		p(class="has-text-centered" data-portuguese="2017 &copy; Atomicodes - Rua Lorem 100, 11° andar - Faria Lima - CEP: 12345-678 - São Paulo - SP" data-english="2017 &copy; Atomicodes - Rua Lorem 100, 11 floor - Faria Lima - ZIP/Postal Code: 12345-678 - São Paulo - SP") 2017 &copy; Atomicodes - Rua Lorem 100, 11° andar - Faria Lima - CEP: 12345-678 - São Paulo - SP
