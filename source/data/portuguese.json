@@ -1,0 +1,43 @@
+[
+	{
+		"Title": "Atomicodes - Diga olá para a nova solução dos seus problemas",
+
+		"Navbar": [
+			"Inicio",
+			"Atomicodes",
+			"Clientes",
+			"Blog",
+			"Contato",
+			"Social"
+		],
+
+		"Home": "Diga olá para a nova solução dos seus problemas",
+
+		"Footer": [
+			{
+				"Sobre nós": [
+					"A atomicodes",
+					"Nossa equipe",
+					"Trabalhe conosco"
+				],
+
+				"Produtos": [
+					"Sistemas ERP",
+					"Aplicativos",
+					"Sistema sob medida",
+					"Website sob medida",
+					"Blog sob medida",
+					"Outros produtos"
+				],
+
+				"Social": [
+					"Facebook",
+					"Twitter",
+					"Instagram",
+					"Github",
+					"Behance"
+				]
+			}
+		]
+	}
+]

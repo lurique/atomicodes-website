@@ -30,7 +30,8 @@ gulp.task('css', function() {
 		.pipe(sass())
 		.on('error', swallowError)
 		.pipe(cssNano())
-		.pipe(gulp.dest('public/css'));
+		.pipe(gulp.dest('public/css'))
+		.pipe(browserSync.stream({match: "**/*.css"}));
 });
 
 gulp.task('js', function() {

@@ -1,6 +1,7 @@
 #home {
 	@include elementSize(100vw, 100vh);
 	@include gradientBackground(45deg, $green 0%, $blue 100%);
+	position: relative;
 
 	.lego-brick {
 		svg {

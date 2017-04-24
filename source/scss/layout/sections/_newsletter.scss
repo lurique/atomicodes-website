@@ -1,0 +1,33 @@
+#newsletter {
+	@include gradientBackground(45deg, $green 0%, $blue 100%);
+	@include elementSize(100%, 135.5px);
+	padding: 40px 0;
+	position: relative;
+
+	h2 {
+		color: $white;
+		font-size: 1.65em;
+		line-height: 26px;
+
+		small {
+			font-size: 0.6em;
+		}
+	}
+
+	.field {
+		margin-top: 10px;
+
+		input {
+			background: transparent;
+			border-top-left-radius: 20px;
+			border-bottom-left-radius: 20px;
+			padding-left: 15px;
+			color: $white;
+		}
+
+		button {
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 20px;
+		}
+	}
+}

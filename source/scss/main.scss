@@ -9,10 +9,13 @@
 // Components
 @import 'components/buttons',
 				'components/fonts',
-				'components/inputs';
+				'components/inputs',
+				'components/anchors';
 
 // Layout
 @import 'layout/navbar',
 				'layout/footer',
 				'layout/sections/home',
-				'layout/sections/atomicodes';
+				'layout/sections/atomicodes',
+				'layout/sections/clients',
+				'layout/sections/newsletter';

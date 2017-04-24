@@ -21,18 +21,9 @@
 
 // Copyright text area
 footer {
-	@include gradientBackground(45deg, $green 0%, $blue 100%);
-	color: $white;
+	background: $white;
+	border-top: 1px solid rgba(0,0,0,0.15);
+	color: $gray;
 	font-size: 0.8em;
-	padding: 10px;
-
-	a {
-		@include transition(all .2s ease);
-		border-bottom: 1px dotted $white;
-		color: $white;
-
-		&:hover {
-			color: $white;
-		}
-	}
+	padding: 8px;
 }
