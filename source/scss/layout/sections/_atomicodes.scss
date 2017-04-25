@@ -1,11 +1,10 @@
 #atomicodes {
-	@include elementSize(100%, 100vh);
+	@include elementSize(100%, auto);
+	padding: 20px 0;
 	position: relative;
 
-	&::after {
-		@include pseudoElement("", absolute, -100px, 0);
-		@include elementSize(100px, 100px);
-		border-right: 100vw solid transparent;
-		border-bottom: 100px solid $white;
+	h1 {
+		font-size: 3em;
+		font-weight: 700;
 	}
 }

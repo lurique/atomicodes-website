@@ -4,6 +4,7 @@
 	padding: 40px 0;
 	position: relative;
 
+	// Title*
 	h2 {
 		color: $white;
 		font-size: 1.65em;
@@ -14,20 +15,37 @@
 		}
 	}
 
-	.field {
-		margin-top: 10px;
+	// Form fields
+	form {
+		.field {
+			margin-top: 10px;
 
-		input {
-			background: transparent;
-			border-top-left-radius: 20px;
-			border-bottom-left-radius: 20px;
-			padding-left: 15px;
-			color: $white;
-		}
+			input {
+				background: transparent;
+				border-color: $white;
+				border-top-left-radius: 20px;
+				border-bottom-left-radius: 20px;
+				padding-left: 15px;
+				color: $white;
 
-		button {
-			border-top-right-radius: 20px;
-			border-bottom-right-radius: 20px;
+				&:hover {
+					border-color: $white;
+				}
+			}
+
+			button {
+				@include transition(all .2s ease);
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				border-color: $white;
+				color: $blue;
+				text-transform: uppercase;
+
+				&:hover {
+					background: $blue;
+					color: $white;
+				}
+			}
 		}
 	}
 }
