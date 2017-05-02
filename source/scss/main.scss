@@ -1,10 +1,15 @@
 // Base
 @import	'base/variables',
 				'base/mixins',
-				'base/typography';
+				'base/typography',
+				'base/base';
 
 // Utils
-@import 'utils/functions';
+@import 'utils/functions',
+				'utils/animations';
+
+// Modules
+@import 'modules/toast';
 
 // Components
 @import 'components/buttons',
@@ -18,4 +23,5 @@
 				'layout/sections/home',
 				'layout/sections/atomicodes',
 				'layout/sections/clients',
+				'layout/sections/contact',
 				'layout/sections/newsletter';

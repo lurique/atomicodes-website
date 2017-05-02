@@ -5,11 +5,15 @@ section#newsletter
 				h2(data-portuguese="Inscreva-se em nossa newsletter <br><small>e receba todas as nossas novidades</small>" data-english="Subscribe to our newsletter <br><small>and receive our latest notifications</small>") Subscribe to our newsletter <br><small>and receive our latest notifications</small>
 
 			div.column
-				form.is-pulled-right(action="#")
+				form.is-pulled-right(id="newsletterForm")
 					div.field.has-addons
-						p.control
-							span.fa.fa-envelope
 						p.control
 							input(type="email" class="input" placeholder="Email")
 						p.control
-							button(type="submit" class="button" data-portuguese="Enviar" data-english="Submit") Submit
+							button(type="submit" class="button" data-portuguese="<span class='text'>Enviar</span><span class='dot'></span><span class='dot'></span><span class='dot'></span>" data-english="<span class='text'>Submit</span><span class='dot'></span><span class='dot'></span><span class='dot'></span>")
+								span.text Submit
+								span.dot
+								span.dot
+								span.dot
+
+include ../modules/toast-newsletter

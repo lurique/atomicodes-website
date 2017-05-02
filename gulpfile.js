@@ -54,6 +54,11 @@ gulp.task('libraries', function() {
 		.pipe(sass())
 		.pipe(cssNano())
 		.pipe(gulp.dest('public/css'));
+
+	gulp.src('node_modules/font-awesome/scss/font-awesome.scss')
+		.pipe(sass())
+		.pipe(cssNano())
+		.pipe(gulp.dest('public/css'));
 });
 
 gulp.task('watch', function() {

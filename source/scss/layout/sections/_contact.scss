@@ -1,0 +1,55 @@
+#contact {
+	padding: 20px 0;
+	position: relative;
+
+	.columns {
+		.column {
+			position: relative;
+
+			input, textarea {
+				border: 0;
+				border-bottom: 1px solid $gray;
+				border-radius: 0;
+				box-shadow: none;
+				cursor: pointer;
+
+				+ label {
+					@include transition(all .2s cubic-bezier(0.800, 0, 0, 1.350));
+					position: absolute;
+					cursor: pointer;
+					z-index: 1;
+					top: 12px;
+					left: 23px;
+					margin-top: 6px;
+				}
+
+				&:focus {
+					border-bottom: 2px solid $blue;
+
+					+ label {
+						color: $blue;
+						top: -10px;
+						left: 13px;
+						font-size: 0.85em;
+					}
+				}
+
+				&:not([value=""]) {
+					+ label {
+						color: $blue;
+						top: -10px;
+						left: 13px;
+						font-size: 0.85em;
+					}
+
+					&:invalid {
+						+ label {
+							color: red;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

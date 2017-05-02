@@ -1,0 +1,30 @@
+section#contact
+	div.container
+		div.columns
+			div.column.is-two-thirds
+				form(action="#" id="contactForm" method="POST")
+					div.columns
+						div.column
+							input(type="text" class="input" name="name" id="name" onkeyup="this.setAttribute('value', this.value);" value="" required)
+							label(for="name" data-portuguese="Nome" data-english="Name") Name *
+						div.column
+							input(type="email" class="input" name="email" id="email" onkeyup="this.setAttribute('value', this.value);" value="" required)
+							label(for="email" data-portuguese="Email" data-english="Email") Email *
+					div.columns
+						div.column
+							input(type="tel" class="input" name="phone" id="phone" onkeyup="this.setAttribute('value', this.value);" value="")
+							label(for="phone" data-portuguese="Telefone" data-english="Phone") Phone *
+						div.column
+							input(type="text" class="input" name="where" id="where" onkeyup="this.setAttribute('value', this.value);" value="")
+							label(for="where" data-portuguese="Onde nos encontrou?" data-english="Where you find us?") Where you find us? *
+					div.columns
+						div.column
+							input(type="text" class="input" name="subject" id="subject" onkeyup="this.setAttribute('value', this.value);" value="" required)
+							label(for="subject" data-portuguese="Assunto" data-english="Subject") Subject *
+					div.columns
+						div.column
+							textarea(name="message" id="message" class="textarea" resize="none" onkeyup="this.setAttribute('value', this.value);" value="" required)
+							label(for="message" data-portuguese="Mensagem" data-english="Message") Message *
+
+			div.column
+				h3(data-portuguese="Se preferir, pode entrar em contato direto pelos meios abaixo:" data-english="If you prefer, you can contact directly by the means below:") If you prefer, you can contact directly by the means below:
